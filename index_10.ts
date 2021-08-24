@@ -23,3 +23,4 @@ export function promisifyAll<T extends {[key: string]: any}>(obj: SourceObject<T
     }
     return result as PromisifiedObject<T>;
 }
+export const api = promisifyAll(oldApi);
